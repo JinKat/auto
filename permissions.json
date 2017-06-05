@@ -1,0 +1,23 @@
+{
+  "GET": {
+    "/users": ["admin"],
+    "/users/new": "*",
+    "/session/new": "*",
+    "/cars": ["user", "admin"],
+    "/panel.html": ["user", "admin"]
+  },
+  "POST" : {
+    "/session": "*",
+    "/users": "*",
+    "/cars": ["user", "admin"]
+  },
+  "PUT":{
+    "/cars": ["admin"],
+    "/users": ["admin"]
+  },
+  "DELETE" : {
+    "/cars": [ "admin"],
+    "/session" :["user", "admin"],
+    "/users": ["admin"]
+  }
+}

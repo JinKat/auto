@@ -1,0 +1,38 @@
+{
+  "dev": {
+    "host": "127.0.0.1",
+    "name": "publiс_ transport",
+    "user": "root",
+    "password": "",
+    "dialect": "mysql"
+  },
+  "prod":{
+    "host": "ec2-54-83-25-217.compute-1.amazonaws.com",
+    "name": "d14hbq6cmvhnjm",
+    "user": "rmacfkxsextdnf",
+    "password": "ed9177e0d0dba409f46dfd2714fd09c427570425356d5b9c08ee896a02dc7981",
+    "dialect": "postgres"
+  },
+  "env": "dev",
+  "cookie": {
+    "key": "secret key",
+    "auth": "__auth_id",
+    "roleName": "roleName"
+  },
+  "defaults": {
+    "readChunk": {
+      "length": 10,
+      "start": 0,
+      "draw":0,
+      "search":{
+        "value":""
+      },
+      "order":[
+        {
+          "column":"0",
+          "dir":"asc"
+        }
+      ]
+    }
+  }
+}
