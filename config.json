@@ -7,10 +7,10 @@
     "dialect": "mysql"
   },
   "prod":{
-    "host": "ec2-54-83-25-217.compute-1.amazonaws.com",
-    "name": "d14hbq6cmvhnjm",
-    "user": "rmacfkxsextdnf",
-    "password": "ed9177e0d0dba409f46dfd2714fd09c427570425356d5b9c08ee896a02dc7981",
+    "host": "ec2-23-23-93-255.compute-1.amazonaws.com",
+    "name": "d8tv96fsh80sa2",
+    "user": "tdjspunbbbbhlc",
+    "password": "48e156fe3295b57d6a27423db7f7028ba274ab7570ef37e8389a27eff0832908",
     "dialect": "postgres"
   },
   "env": "dev",
