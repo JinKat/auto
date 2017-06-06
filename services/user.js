@@ -18,20 +18,20 @@ module.exports = (userRepository, roleRepository, errors) => {
             let data = req.data[key];
             return roleRepository.findAll({where: {name: data.role}})
                 .then((role) => {
-                if(!role.length){
-                    return Promise.reject({message: errors.notFound});
-                }
-                let roleId = role[0].id;
+                    if (!role.length) {
+                        return Promise.reject({message: errors.notFound});
+                    }
+                    let roleId = role[0].id;
                     let user = {
                         firstname: data.firstname,
                         lastname: data.lastname,
-                        email:data.email,
+                        email: data.email,
                         roleId: roleId
                     };
                     return userRepository.update(user, {where: {id: data.id}})
-                        .then(() => userRepository.findById(data.id).then((user)=>{
-                                return {"data": user};
-                            }))
+                        .then(() => userRepository.findById(data.id).then((user)=> {
+                            return {"data": user};
+                        }))
                 });
         }
     }
@@ -56,7 +56,7 @@ module.exports = (userRepository, roleRepository, errors) => {
                     raw: true,
 
                     where: {
-                        $or:[
+                        $or: [
                             {
                                 email: {
                                     $like: searchKey
